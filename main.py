@@ -272,7 +272,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
     # Send typing action to show user the bot is working
     await context.bot.send_chat_action(chat_id=ADMIN_GROUP_ID, action=constants.ChatAction.TYPING)
 
-    admin_text = f"👤 <b>ឈ្មោះ:</b> {user.full_name}\n🆔 <code>{display_id}</code>\n───────────────\n"
+    admin_text = f"👤 <b>ឈ្មោះ:</b> {user.full_name}\n───────────────\n"
 
     sent_msg = None
     try:
